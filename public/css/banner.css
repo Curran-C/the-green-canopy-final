@@ -1,0 +1,9 @@
+.about-bg-img {
+    height: 200px;
+    background-image: url('../images/banner-img/about-banner-bg.png');
+}
+
+.contact-bg-img {
+    height: 200px;
+    background-image: url('../images/banner-img/contact-banner-img.png');
+}

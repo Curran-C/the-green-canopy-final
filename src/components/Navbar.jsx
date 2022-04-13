@@ -1,6 +1,9 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography, MenuItem, IconButton } from '@mui/material'
 import PhotoCamera from '@mui/icons-material/PhotoCamera'
+import { createTheme } from "@mui/material/styles"
+import { Link, NavLink } from 'react-router-dom'
+
 
 export default function Navbar() {
 
@@ -10,11 +13,13 @@ export default function Navbar() {
         <div className='navbar'>
             <AppBar style={{ background: 'transparent', boxShadow: 'none', position: 'relative', margin: 0 }}>
                 <IconButton> <PhotoCamera /> </IconButton>
-                <Toolbar sx={{ backgroundColor: '#435037', justifyContent: 'center' }}>
+                <Toolbar sx={{ backgroundColor: '#303030', justifyContent: 'center' }}>
                     {menuItems.map((item) => {
                         return (
                             <MenuItem key={item}>
-                                <Typography variant="h6">{item}</Typography>
+                                <NavLink className="menu-link" component={Link} style={{ textDecoration: 'none' }} to={"/" + item.toLowerCase()}>
+                                    <Typography variant="h6">{item}</Typography>
+                                </NavLink>
                             </MenuItem>
                         )
                     })}
