@@ -11,7 +11,7 @@ export default function Footer() {
             <Grid container spacing={4} sx={{ justifyContent: 'space-around', alignItems: 'center' }}>
                 {/* logo */}
                 <Grid item>
-                    <IconButton sx={{ color: 'white' }}> <PhotoCamera /> </IconButton>
+                    <IconButton>  <img style={{ height: '70px' }} src='images/logo.png' alt='the green canopy' /> </IconButton>
                 </Grid>
                 {/* address */}
                 <Grid item>

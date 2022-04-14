@@ -1,22 +1,21 @@
 import React from 'react';
 import LeftAlign from './subcomponents/LeftAlign'
 import RightAlign from './subcomponents/RightAlign'
+import data from './service-data'
 
 export default function Services() {
 
-    let count = [0, 1, 2]
+    let serviceData = { data }.data
 
     return (
         <div>
-            {count.map((number) => {
-                return (
-                    <>
-                        <LeftAlign />
-                        <RightAlign />
-                    </>
-                )
+            {serviceData.map((data) => {
+                if (data.key % 2 === 0) {
+                    return (<RightAlign title={data.title} description={data.description} image={data.image} />)
+                } else {
+                    return (<LeftAlign title={data.title} description={data.description} image={data.image} />)
+                }
             })}
-            <LeftAlign />
         </div >
     )
 }

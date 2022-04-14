@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography, MenuItem, IconButton } from '@mui/material'
+import { createTheme } from '@mui/material/styles'
 import PhotoCamera from '@mui/icons-material/PhotoCamera'
-import { createTheme } from "@mui/material/styles"
 import { Link, NavLink } from 'react-router-dom'
 
 
@@ -9,10 +9,24 @@ export default function Navbar() {
 
     let menuItems = ['Services', 'About', 'Contact Us']
 
+    const theme = createTheme();
+
+    theme.typography.h5 = {
+        color: '#004800',
+        fontFamily: ['Quintessential', 'cursive'].join(),
+        width: '210px',
+        fontSize: '25px',
+        letterSpacing: '1px',
+        fontWeight: 200
+    }
+
     return (
         <div className='navbar'>
             <AppBar style={{ background: 'transparent', boxShadow: 'none', position: 'relative', margin: 0 }}>
-                <IconButton component={Link} to="/"> <PhotoCamera /> </IconButton>
+                <IconButton component={Link} to="/">
+                    <img style={{ height: '70px' }} src='images/logo.png' alt='the green canopy' />
+                    <Typography theme={theme} variant="h5">The Green Canopy</Typography>
+                </IconButton>
                 <Toolbar sx={{ backgroundColor: '#303030', justifyContent: 'center' }}>
                     {menuItems.map((item) => {
                         return (

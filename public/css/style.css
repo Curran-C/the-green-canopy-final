@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #F7F5F2;
     /* background-color: gray; */
 }
 
@@ -7,6 +8,3 @@ body{
     margin: 8px
 }
 
-.menu-link {
-    color: white;
-}
