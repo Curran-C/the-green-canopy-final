@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <div className='navbar'>
             <AppBar style={{ background: 'transparent', boxShadow: 'none', position: 'relative', margin: 0 }}>
-                <IconButton> <PhotoCamera /> </IconButton>
+                <IconButton component={Link} to="/"> <PhotoCamera /> </IconButton>
                 <Toolbar sx={{ backgroundColor: '#303030', justifyContent: 'center' }}>
                     {menuItems.map((item) => {
                         return (
