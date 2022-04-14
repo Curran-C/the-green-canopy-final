@@ -1,8 +1,27 @@
 import React from 'react';
 import { Card, Grid, CardMedia, Typography } from '@mui/material'
+import { createTheme } from '@mui/material/styles'
+
 
 
 export default function LeftAlign(props) {
+
+    const theme = createTheme();
+
+    theme.typography.h5 = {
+        fontSize: '25px',
+        color: '#05361F',
+        fontFamily: ['Lora', 'serif'].join(),
+        fontWeight: 700
+    }
+    theme.typography.body1 = {
+        fontSize: '17px',
+        color: '#05361F',
+        fontFamily: ['Lora', 'serif'].join(),
+        fontWeight: 400,
+        lineHeight: '30px'
+    }
+
     return (
         <Grid sx={{ marginBottom: '50px' }} alignItems="center" container spacing={4}>
             <Grid item></Grid>
@@ -14,8 +33,8 @@ export default function LeftAlign(props) {
             <Grid item></Grid>
 
             <Grid item md={8}>
-                <Typography gutterBottom variant="h5">{props.title}</Typography>
-                <Typography variant="body1">{props.description}</Typography>
+                <Typography theme={theme} gutterBottom variant="h5">{props.title}</Typography>
+                <Typography theme={theme} variant="body1">{props.description}</Typography>
             </Grid>
         </Grid>
     )

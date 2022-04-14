@@ -1,9 +1,17 @@
 .about-bg-img {
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
     background-image: url('../images/banner-img/about-banner-bg.png');
 }
 
 .contact-bg-img {
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
     background-image: url('../images/banner-img/contact-banner-img.png');
 }

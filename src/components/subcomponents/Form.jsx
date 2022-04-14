@@ -1,12 +1,12 @@
 import React from 'react';
-import { Typography } from '@mui/material'
+import { Typography, Grid } from '@mui/material'
 
 export default function Form() {
     return (
         <>
-            <h1>Drop in your queries</h1>
+            <Typography variant="h1">Drop in your queries</Typography>
             <form>
-                <div>
+                <div className='form'>
                     <label>First Name</label>
                     <input type="text" required />
                     <label>Last Name</label>
@@ -22,6 +22,7 @@ export default function Form() {
                 </div>
                 <label>queries:</label>
                 <textarea></textarea>
+                <button type="submit">Submit</button>
             </form>
         </>
     )

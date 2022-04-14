@@ -19,6 +19,11 @@ export default function Navbar() {
         letterSpacing: '1px',
         fontWeight: 200
     }
+    theme.typography.h6 = {
+        fontSize: '20px',
+        fontFamily: ['Lora', 'serif'].join(),
+        fontWeight: 200
+    }
 
     return (
         <div className='navbar'>
@@ -32,7 +37,7 @@ export default function Navbar() {
                         return (
                             <MenuItem key={item}>
                                 <NavLink className="menu-link" component={Link} style={{ textDecoration: 'none' }} to={"/" + item.toLowerCase()}>
-                                    <Typography variant="h6">{item}</Typography>
+                                    <Typography theme={theme} variant="h6">{item}</Typography>
                                 </NavLink>
                             </MenuItem>
                         )
