@@ -8,7 +8,7 @@ export default function Services() {
     let serviceData = { data }.data
 
     return (
-        <div className='overall-margin'>
+        <div style={{ marginTop: '60px' }} className='overall-margin'>
             {serviceData.map((data) => {
                 if (data.key % 2 === 0) {
                     return (<RightAlign title={data.title} description={data.description} image={data.image} />)

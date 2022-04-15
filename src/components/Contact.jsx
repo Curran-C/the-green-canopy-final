@@ -1,10 +1,14 @@
 import React from 'react';
 import Banner from "./subcomponents/Banner"
-import { Grid } from '@mui/material'
+import { Grid, Box } from '@mui/material'
 import Form from './subcomponents/Form'
 import Info from './subcomponents/Info'
+import Map from './subcomponents/Map'
 
 export default function Contact() {
+
+
+
     return (
         <div>
             <Banner classname="contact-bg-img" title="Contact" desc="The Green Canopy" />
@@ -15,6 +19,9 @@ export default function Contact() {
                     </Grid>
                     <Grid item>
                         <Info />
+                        <Box height='300px' width='300px'>
+                            <Map />
+                        </Box>
                     </Grid>
                 </Grid>
             </div>

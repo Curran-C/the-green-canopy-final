@@ -15,7 +15,7 @@ export default function LeftAlign(props) {
         fontWeight: 700
     }
     theme.typography.body1 = {
-        fontSize: '17px',
+        fontSize: '20px',
         color: '#05361F',
         fontFamily: ['Lora', 'serif'].join(),
         fontWeight: 400,
