@@ -19,7 +19,7 @@ export default function Contact() {
                     </Grid>
                     <Grid item>
                         <Info />
-                        <Box height='300px' width='300px'>
+                        <Box sx={{ marginTop: '30px' }} height='300px' width='400px'>
                             <Map />
                         </Box>
                     </Grid>
