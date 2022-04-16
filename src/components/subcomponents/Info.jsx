@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material'
 import { createTheme } from '@mui/material/styles'
-import { letterSpacing } from '@mui/system';
 
 export default function Info() {
 
