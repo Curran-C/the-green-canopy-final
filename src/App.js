@@ -7,6 +7,7 @@ import Contact from "./components/Contact"
 import Homepage from './components/Homepage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 export default function App() {
     return(
         <>

@@ -13,7 +13,10 @@ export default function Info() {
         fontWeight: 600,
         margin: "30px 35px 10px auto",
         letterSpacing: '1px',
-        color: '#05361F'
+        color: '#05361F',
+        '@media screen and (max-width: 1024px)': {
+            textAlign: 'center'
+        }
 
     }
 
@@ -23,31 +26,34 @@ export default function Info() {
         fontWeight: 200,
         margin: 'auto 35px auto auto',
         color: '#05361F',
-        letterSpacing: '1px'
+        letterSpacing: '1px',
+        '@media screen and (max-width: 1024px)': {
+            textAlign: 'center'
+        }
     }
 
     return (
         <div>
             <Grid container>
-                <Grid item>
+                <Grid xs={12} md={6} item>
                     <Typography theme={theme} variant="h6">Bengaluru</Typography>
                     <Typography theme={theme} variant="body1">#00 , Lorem Ipsum,</Typography>
                     <Typography theme={theme} gutterBottom variant="body1">lorem ipsum</Typography>
                 </Grid>
 
-                <Grid item>
+                <Grid xs={12} md={6} item>
                     <Typography theme={theme} variant="h6">Contact: </Typography>
                     <Typography theme={theme} variant="body1">+91 00000 00000,</Typography>
                     <Typography theme={theme} gutterBottom variant="body1">+91 00000 00000</Typography>
                 </Grid>
             </Grid>
             <Grid container>
-                <Grid item>
+                <Grid xs={12} md={6} item>
                     <Typography theme={theme} variant='h6'>Working Hours: </Typography>
                     <Typography theme={theme} variant='body1'>#00, Lorem Ipsum, </Typography>
                     <Typography theme={theme} variant='body1'>Lorem Ipsum </Typography>
                 </Grid>
-                <Grid item>
+                <Grid xs={12} md={6} item>
                     <Typography sx={{ marginTop: '30px' }} theme={theme} variant='body1'>TGC@gmail.com</Typography>
                 </Grid>
             </Grid>

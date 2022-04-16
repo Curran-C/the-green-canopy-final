@@ -17,7 +17,10 @@ export default function About() {
         fontSize: '20px',
         lineHeight: '30px',
         fontWeight: 200,
-        color: '#05361F'
+        color: '#05361F',
+        '@media screen and (max-width: 1024px)': {
+            textAlign: 'center'
+        }
     }
 
     return (

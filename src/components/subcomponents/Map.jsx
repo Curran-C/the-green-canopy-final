@@ -2,6 +2,7 @@ import React from 'react'
 import { useJsApiLoader, GoogleMap } from '@react-google-maps/api'
 
 
+
 export default function Map() {
     console.log(process.env.REACT_APP_GOOGLE_MAP_API)
     const { isLoaded } = useJsApiLoader({
@@ -11,7 +12,7 @@ export default function Map() {
     const center = { lat: 48.858093, lng: 2.294694 }
 
     if (!isLoaded) {
-        return ('Loading...')
+        return ('Loading Map...')
     } else {
         return (
             <>
