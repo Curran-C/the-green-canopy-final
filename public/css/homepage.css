@@ -1,0 +1,52 @@
+.relative {
+    position: relative;
+    bottom: 150px;
+}
+
+.grass {
+    width: 100%;
+    overflow: hidden;
+    min-height: 150px;
+    object-fit: cover;
+}
+
+.plant1{
+    position: absolute;
+    min-height: 80px;
+    max-height: 300px;
+    left: 0;
+    top: 0;
+}
+
+.plant2 {
+    position: absolute;
+    height: 250px;
+    right: 0;
+    top: 0
+}
+.subheading {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-family: 'Lora', 'serif';
+    /* font-size: 25px; */
+    font-weight: 600;
+    color: #805a29;
+    text-align: center;
+}
+.underline {
+    padding-bottom: 2px;
+    border-bottom: #805a29 2px solid;
+}
+
+
+@media screen and (max-width: 540px) {
+    .plant1 {
+        height: 150px
+    }
+    .plant2 {
+        height: 140px;
+    }
+    h5 {
+        font-size: 15px,
+    }
+}

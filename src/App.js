@@ -20,7 +20,6 @@ export default function App() {
                     <Route path='/contact%20us' element={<Contact />} />
                     <Route path='/services' element={<Services />} />
                 </Routes>
-                <Footer />
             </div>
         </Router>
         </>
