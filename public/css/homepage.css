@@ -1,52 +1,117 @@
 .relative {
-    position: relative;
-    bottom: 150px;
+  position: relative;
+  bottom: 150px;
 }
 
 .grass {
-    width: 100%;
-    overflow: hidden;
-    min-height: 150px;
-    object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  min-height: 150px;
+  object-fit: cover;
 }
 
-.plant1{
-    position: absolute;
-    min-height: 80px;
-    max-height: 300px;
-    left: 0;
-    top: 0;
+.plant1 {
+  position: absolute;
+  height: 300px;
+  left: 0;
+  top: 0;
 }
 
 .plant2 {
-    position: absolute;
-    height: 250px;
-    right: 0;
-    top: 0
+  position: absolute;
+  height: 250px;
+  right: 0;
+  top: 0;
 }
 .subheading {
-    margin-top: 150px;
-    margin-bottom: 40px;
-    font-family: 'Lora', 'serif';
-    /* font-size: 25px; */
-    font-weight: 600;
-    color: #805a29;
-    text-align: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  font-family: "Lora", "serif";
+  /* font-size: 25px; */
+  font-weight: 600;
+  color: #805a29;
+  text-align: center;
 }
 .underline {
-    padding-bottom: 2px;
-    border-bottom: #805a29 2px solid;
+  padding-bottom: 2px;
+  border-bottom: #805a29 2px solid;
 }
 
-
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 375px) {
+  .plant1 {
+    height: 150px;
+  }
+  .plant2 {
+    height: 140px;
+  }
+  .subheading {
+      margin-top: 170px;
+    font-size: 15px;
+  }
+  .relative {
+      bottom: 170px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 540px) {
     .plant1 {
-        height: 150px
+        height: 250px;
     }
+
     .plant2 {
-        height: 140px;
+        height: 240px;
     }
-    h5 {
-        font-size: 15px,
+
+
+    .subheading {
+        margin-top: 300px;
+        font-size: 20px;
+    }
+
+    .relative {
+        bottom: 300px;
+    }
+}
+@media screen and (min-widht: 540px) and (max-width: 768px) {
+    .plant1 {
+        height: 350px;
+    }
+
+    .plant2 {
+        height: 340px;
+    }
+
+
+    .subheading {
+        margin-top: 400px;
+        font-size: 20px;
+    }
+
+    .relative {
+        bottom: 400px;
+    }
+}
+@media screen and (min-width: 786px) and (max-width: 820px) {
+    .plant1 {
+        height: 450px;
+    }
+
+    .plant2 {
+        height: 440px;
+    }
+
+
+    .subheading {
+        margin-top: 560px;
+        font-size: 20px;
+    }
+
+    .relative {
+        bottom: 560px;
+    }
+}
+@media screen and (min-width: 1180px) and (max-width: 1280px) {
+    .grass {
+        position: absolute;
+        bottom: 0;
     }
 }

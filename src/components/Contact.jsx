@@ -4,6 +4,8 @@ import { Grid, Box } from '@mui/material'
 import Form from './subcomponents/Form'
 import Info from './subcomponents/Info'
 import Map from './subcomponents/Map'
+import Footer from './Footer'
+
 
 export default function Contact() {
 
@@ -25,6 +27,7 @@ export default function Contact() {
                     </Grid>
                 </Grid>
             </div>
+            <Footer />
         </div>
     )
 }

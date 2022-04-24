@@ -26,9 +26,13 @@ export default function Homepage() {
         letterSpacing: '3px',
         margin: 'auto',
         textAlign: 'center',
-        '@media screen and (max-width: 540px)': {
+        '@media screen and (max-width: 375px)': {
             fontSize: '40px',
             marginBottom: '40px',
+        },
+        '@media screen and (max-width: 540px)': {
+            fontSize: '57px',
+            marginBottom: '20px',
         }
 
     }
