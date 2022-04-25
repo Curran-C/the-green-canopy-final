@@ -1,10 +1,11 @@
 import React from "react";
-import Banner from './subcomponents/Banner'
+import Banner from '../subcomponents/Banner'
 import { Typography } from '@mui/material'
 import { createTheme } from '@mui/material/styles'
-import Footer from './Footer'
+import Footer from '../Footer'
+import './about.css'
 
-export default function About() {
+function About() {
 
     const theme = createTheme()
 
@@ -28,8 +29,14 @@ export default function About() {
         <div>
             <Banner classname="about-bg-img" title="About" desc="The Green Canopy" />
             <Typography sx={{ margin: '30px auto' }} gutterBottom align='center' theme={theme} variant="h5">“Choose a job you love, and you never have to work a day in your life”</Typography>
+            <div style={{ position: 'relative' }}>
+                <img className="leafone" src="images/leaves/leaf1.png" alt="leaf" />
+                <img className="leafseven" src="images/leaves/leaf7.png" alt="leaf" />
+            </div>
             <Typography sx={{ width: '80%', margin: '0px auto 30px auto' }} theme={theme} variant="h6">Quite powerful, this line, made 4 enthusiasts take up Gardening and Landscaping full time and here we are now as The Green Canopy. We aim to take up this self given responsibility in planning and executing a shade of green both of us would come to cherish and be proud of. May it be residential or commercial, we look forward to work with you and infect our love for it that has become an inseparable part of us. We at Green canopy specialise in all kinds of Plants- may it be flowering, fruiting or plain vegetation; the Medium- Soil, Coco peat etc and the fertilisers- organic and inorganic. It gives us immense joy combining our expertise and experience into hand crafting and providing the best greens you’d come to appreciate.</Typography>
             <Footer />
         </div>
     )
 }
+
+export default About

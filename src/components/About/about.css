@@ -1,0 +1,19 @@
+.leafone {
+    position: absolute;
+    z-index: -1;
+    top: -10;
+    left: 0;
+}
+.leafseven {
+    position: absolute;
+    z-index: -1;
+    top: -10;
+    right: 0;
+}
+
+
+@media screen and (max-width: 840px) {
+    .leafseven {
+        top: 500px 
+    }
+}

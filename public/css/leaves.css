@@ -1,0 +1,134 @@
+.leaf1 {
+    z-index: -1;
+    height: 300px;
+    left: 0;
+    top: 100px;
+    transform: rotate(30deg);
+    overflow: hidden;
+}
+
+.leaf2 {
+    z-index: -1;
+    height: 300px;
+    left: 50%;
+    top: 250px;
+    opacity: 0.3;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.leaf3 {
+    z-index: -1;
+    height: 300px;
+    left: 60%;
+    top: 600px;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+.leaf4 {
+    z-index: -1;
+    height: 300px;
+    left: 10%;
+    top: 800px;
+    overflow: hidden;
+    /* transform: rotate(-60deg); */
+}
+
+.leaf5 {
+    z-index: -1;
+    height: 300px;
+    left: 60%;
+    top: 1200px;
+    overflow: hidden;
+    /* transform: rotate(-60deg); */
+}
+
+.leaf6 {
+    z-index: -1;
+    height: 300px;
+    left: 10%;
+    top: 1400px;
+    overflow: hidden;
+    /* transform: rotate(-60deg); */
+}
+
+.leaf7 {
+    z-index: -1;
+    height: 300px;
+    left: 60%;
+    top: 1800px;
+    overflow: hidden;
+    /* transform: rotate(-60deg); */
+}
+
+@media screen and (max-width: 540px) {
+    .leaf1{
+        left: 0;
+        top: 100px;
+        overflow: hidden;
+    }
+    .leaf2{
+        left: 0;
+        top: 600px;
+        overflow: hidden;
+    }
+    .leaf3{
+        left: 0;
+        top: 1200px;
+        overflow: hidden;
+    }
+    .leaf4{
+        left: 0;
+        top: 1800px;
+        overflow: hidden;
+    }
+    .leaf5{
+        left: 0;
+        top: 2600px;
+        overflow: hidden;
+    }
+    .leaf6{
+        left: 0;
+        top: 3400px;
+        overflow: hidden;
+    }
+    .leaf7{
+        left: 0;
+        top: 3800px;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 540px) and (max-width: 820px) {
+        .leaf1{
+        left: 0;
+        top: 100px;
+        overflow: hidden;
+    }
+    .leaf2{
+        left: 10%;
+        top: 600px;
+        overflow: hidden;
+    }
+    .leaf3{
+        left: 30%;
+        top: 1200px;
+        overflow: hidden;
+    }
+    .leaf4{
+        left: 0;
+        top: 1800px;
+        overflow: hidden;
+    }
+    .leaf5{
+        left: 30%;
+        top: 2600px;
+        overflow: hidden;
+    }
+    .leaf6{
+        left: 50%;
+        top: 3200px;
+        overflow: hidden;
+    }
+}

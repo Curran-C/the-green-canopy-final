@@ -15,7 +15,7 @@ const data = [
         key: 3,
         image: 'images/service-imgs/mini-garden.png',
         title: 'Mini Garden',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nibh sem, aliquet ut dictum vestibulum, convallis mattis risus. Integer lorem turpis, commodo vitae est eu, mollis suscipit nisl. Praesent orci nisl, tempus et urna in, vehicula egestas neque. Duis gravida varius mauris, vitae cursus tellus ultrices a.'    
+        description: 'As the name suggests, these are smaller gardens that we can grow and maintain in any part of your house. The main focus of this project is to grow a garden but on a small enough scale to fit in your living room, any part of your house or to bring the calmness of nature into your office to help improve the ambiance and improve the mental state of employees.'    
     },
     {
         key: 4,

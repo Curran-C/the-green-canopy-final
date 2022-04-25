@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Services from './components/Services'
-import About from "./components/About"
-import Contact from "./components/Contact"
+import About from "./components/About/About"
+import Contact from "./components/Contact/Contact"
 import Homepage from './components/Homepage'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
