@@ -50,7 +50,8 @@ export default function Homepage() {
             <Typography sx={{
                 width: '55%',
                 '@media screen and (max-width: 540px)': {
-                    width: '95%'
+                    width: '95%',
+                    marginBottom: '80px'
                 }
             }} theme={theme} variant='h2' align="center" component="h1">Transform Your Outdoor Space</Typography>
             <img className='grass' src="images/homepage-imgs/grass.png" alt="grass"></img>

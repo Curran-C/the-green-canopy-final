@@ -37,6 +37,9 @@
   border-bottom: #805a29 2px solid;
 }
 
+
+/******************************MEDIA QUERIES ********************************************/
+
 @media screen and (max-width: 375px) {
   .plant1 {
     height: 150px;
@@ -45,7 +48,7 @@
     height: 140px;
   }
   .subheading {
-      margin-top: 170px;
+    margin-top: 170px;
     font-size: 15px;
   }
   .relative {
@@ -54,24 +57,23 @@
 }
 @media screen and (min-width: 375px) and (max-width: 540px) {
     .plant1 {
-        height: 250px;
+        height: 230px;
     }
 
     .plant2 {
-        height: 240px;
+        height: 220px;
     }
 
-
     .subheading {
-        margin-top: 300px;
+        margin-top: 250px;
         font-size: 20px;
     }
 
     .relative {
-        bottom: 300px;
+        bottom: 250px;
     }
 }
-@media screen and (min-widht: 540px) and (max-width: 768px) {
+@media screen and (min-width: 540px) and (max-width: 768px) {
     .plant1 {
         height: 350px;
     }
@@ -98,8 +100,6 @@
     .plant2 {
         height: 440px;
     }
-
-
     .subheading {
         margin-top: 560px;
         font-size: 20px;
