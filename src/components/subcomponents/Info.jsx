@@ -42,18 +42,18 @@ export default function Info() {
 
                 <Grid xs={12} md={6} item>
                     <Typography theme={theme} variant="h6">Contact: </Typography>
-                    <Typography theme={theme} variant="body1">+91 00000 00000,</Typography>
-                    <Typography theme={theme} gutterBottom variant="body1">+91 00000 00000</Typography>
+                    <Typography theme={theme} variant="body1">8495922999 - Priya ,</Typography>
+                    <Typography theme={theme} gutterBottom variant="body1">9986282827 - Sahana</Typography>
                 </Grid>
             </Grid>
             <Grid container>
                 <Grid xs={12} md={6} item>
                     <Typography theme={theme} variant='h6'>Working Hours: </Typography>
-                    <Typography theme={theme} variant='body1'>#00, Lorem Ipsum, </Typography>
-                    <Typography theme={theme} variant='body1'>Lorem Ipsum </Typography>
+                    <Typography theme={theme} variant='body1'>9:00 AM to 7:00 PM </Typography>
+                    <Typography theme={theme} variant='body1'>Monday to Saturday </Typography>
                 </Grid>
                 <Grid xs={12} md={6} item>
-                    <Typography sx={{ marginTop: '30px' }} theme={theme} variant='body1'>TGC@gmail.com</Typography>
+                    <Typography sx={{ marginTop: '30px' }} theme={theme} variant='body1'>queries.tgc@gmail.com</Typography>
                 </Grid>
             </Grid>
         </div>

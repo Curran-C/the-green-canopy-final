@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
-import { Typography, Grid, Button } from '@mui/material'
-import { createTheme } from '@mui/material/styles'
+import { Typography, Grid, Button } from '@mui/material';
+import { createTheme } from '@mui/material/styles';
 import emailjs from '@emailjs/browser';
+
+
 
 export default function Form() {
     const form = useRef();
@@ -37,7 +39,6 @@ export default function Form() {
         }
     }
 
-
     return (
         <>
             <Typography align='center' theme={theme} variant="h4">Drop in your queries</Typography>
@@ -68,7 +69,7 @@ export default function Form() {
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Typography theme={theme} variant="body1">Phone Number:</Typography>
-                        <input name="phNumber" placeholder='Phone Number' size="30" type="number" min="1111111111" max='9999999999' required />
+                        <input name="phNumber" placeholder='Phone Number' size="30" type="number" min="1000000000" max='9999999999' required />
                     </Grid>
                 </Grid>
                 <Grid container>
