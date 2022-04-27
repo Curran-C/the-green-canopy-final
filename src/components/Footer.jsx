@@ -13,10 +13,10 @@ export default function Footer() {
     const theme = createTheme();
 
     theme.typography.h6 = {
-        fontFamily: ['Lora', 'serif'].join(),
+        fontFamily: ['Quintessential', 'cursive'].join(),
         fontSize: '20px',
-        fontWeight: 200,
-        letterSpacing: '1px',
+        fontWeight: 800,
+        letterSpacing: '1.5px',
         // '@media screen and (max-width: 540px)': {
         //     fontSize: '17px'
         // }

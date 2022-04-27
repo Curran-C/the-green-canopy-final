@@ -45,17 +45,17 @@ export default function Form() {
             <form ref={form} onSubmit={sendEmail}>
                 <Grid container spacing={2}>
                     <Grid item md={5.3} xs={12}>
-                        <Typography theme={theme} variant="body1">First Name: </Typography>
+                        <Typography theme={theme} variant="body1">First Name</Typography>
                         <input name="firstName" style={{ paddingLeft: 'auto' }} placeholder='First Name' size="30" type="text" required />
                     </Grid>
                     <Grid item md={6} xs={12}>
-                        <Typography theme={theme} variant="body1">Last Name: </Typography>
+                        <Typography theme={theme} variant="body1">Last Name</Typography>
                         <input name="lastName" placeholder='Last Name' size="30" type="text" required />
                     </Grid>
                 </Grid>
                 <Grid container spacing={1}>
                     <Grid item xs={12} md={12}>
-                        <Typography theme={theme} variant="body1">Address:</Typography>
+                        <Typography theme={theme} variant="body1">Address</Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
                         <textarea name="address" placeholder='Area, City' rows="6" cols="65"></textarea>
@@ -64,17 +64,17 @@ export default function Form() {
                 </Grid>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={5.3}>
-                        <Typography theme={theme} variant="body1">Email Address:</Typography>
+                        <Typography theme={theme} variant="body1">Email Address</Typography>
                         <input name="email" placeholder='Email' size="30" type="email" required />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <Typography theme={theme} variant="body1">Phone Number:</Typography>
+                        <Typography theme={theme} variant="body1">Phone Number</Typography>
                         <input name="phNumber" placeholder='Phone Number' size="30" type="number" min="1000000000" max='9999999999' required />
                     </Grid>
                 </Grid>
                 <Grid container>
                     <Grid item xs={12}>
-                        <Typography theme={theme} variant="body1">Queries:</Typography>
+                        <Typography theme={theme} variant="body1">Queries</Typography>
                         <textarea name="query" placeholder='What would you like to enquire?' rows="6" cols="65"></textarea>
                     </Grid>
                 </Grid>
