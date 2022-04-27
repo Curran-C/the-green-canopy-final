@@ -28,10 +28,10 @@ export default function Navbar() {
     return (
         <div className='navbar'>
             <AppBar style={{ background: 'transparent', boxShadow: 'none', position: 'relative', margin: 0 }}>
-                <IconButton component={Link} to="/">
+                {/* <IconButton component={Link} to="/">
                     <img style={{ height: '70px' }} src='images/logo.png' alt='the green canopy' />
                     <Typography theme={theme} variant="h5">The Green Canopy</Typography>
-                </IconButton>
+                </IconButton> */}
                 <Toolbar sx={{ backgroundColor: '#303030', justifyContent: 'center' }}>
                     {menuItems.map((item) => {
                         return (
