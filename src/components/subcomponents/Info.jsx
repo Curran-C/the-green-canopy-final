@@ -53,7 +53,7 @@ export default function Info() {
                     <Typography theme={theme} variant='body1'>Monday to Saturday </Typography>
                 </Grid>
                 <Grid xs={12} md={6} item>
-                    <Typography sx={{ marginTop: '30px' }} theme={theme} variant='body1'>queries.tgc@gmail.com</Typography>
+                    <Typography sx={{ marginTop: '30px', marginBottom: '30px' }} theme={theme} variant='body1'>queries.tgc@gmail.com</Typography>
                 </Grid>
             </Grid>
         </div>

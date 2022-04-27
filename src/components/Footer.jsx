@@ -16,7 +16,10 @@ export default function Footer() {
         fontFamily: ['Lora', 'serif'].join(),
         fontSize: '20px',
         fontWeight: 200,
-        letterSpacing: '1px'
+        letterSpacing: '1px',
+        // '@media screen and (max-width: 540px)': {
+        //     fontSize: '17px'
+        // }
     }
     theme.typography.h5 = {
         fontFamily: ['Lora', 'serif'].join(),
@@ -41,8 +44,9 @@ export default function Footer() {
                 </Grid> */}
                 {/* number */}
                 <Grid item align='center' md={4} xs={4}>
-                    <Typography theme={theme} variant="h6"> +91 8495922999 - Priya</Typography>
-                    <Typography theme={theme} variant="h6"> +91 9986282827 - Sahana</Typography>
+                    <Typography theme={theme} variant="h6">The Green Canopy</Typography>
+                    {/* <Typography theme={theme} variant="h6"> +91 8495922999 - Priya</Typography>
+                    <Typography theme={theme} variant="h6"> +91 9986282827 - Sahana</Typography> */}
                 </Grid>
                 {/* socials */}
                 <Grid item align='center' md={4} xs={4}>
