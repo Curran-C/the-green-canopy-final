@@ -29,7 +29,7 @@ export default function Footer() {
             <Grid container spacing={4} sx={{ justifyContent: 'space-around', alignItems: 'center' }}>
                 {/* logo */}
                 <Grid item>
-                    <IconButton>  <img src='images/logo.png' alt='the green canopy' /> </IconButton>
+                    <IconButton>  <img style={{ height: '100px' }} src='images/logo.png' alt='the green canopy' /> </IconButton>
                 </Grid>
                 {/* address */}
                 <Grid item>
