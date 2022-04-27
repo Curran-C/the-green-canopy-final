@@ -4,6 +4,8 @@ import PhotoCamera from '@mui/icons-material/PhotoCamera'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { createTheme } from '@mui/material/styles'
+import { Link } from 'react-router-dom'
+
 
 
 export default function Footer() {
@@ -12,7 +14,7 @@ export default function Footer() {
 
     theme.typography.h6 = {
         fontFamily: ['Lora', 'serif'].join(),
-        fontSize: '15px',
+        fontSize: '20px',
         fontWeight: 200,
         letterSpacing: '1px'
     }
@@ -26,25 +28,25 @@ export default function Footer() {
 
     return (
         <div className='footer'>
-            <Grid container spacing={4} sx={{ justifyContent: 'space-around', alignItems: 'center' }}>
+            <Grid container spacing={3} sx={{ justifyContent: 'center', alignItems: 'center' }}>
                 {/* logo */}
-                <Grid item>
+                <Grid item align='center' md={4} xs={4}>
                     <IconButton>  <img style={{ height: '100px' }} src='images/logo.png' alt='the green canopy' /> </IconButton>
                 </Grid>
                 {/* address */}
-                <Grid item>
+                {/* <Grid item>
                     <Typography gutterBottom theme={theme} variant="h5"> Address:</Typography>
                     <Typography theme={theme} variant="h6"> #00, Lorem Ipsum</Typography>
                     <Typography theme={theme} variant="h6"> lorem Ipsum</Typography>
-                </Grid>
+                </Grid> */}
                 {/* number */}
-                <Grid item>
-                    <Typography theme={theme} variant="h6"> +91 000000000</Typography>
-                    <Typography theme={theme} variant="h6"> +91 000000000</Typography>
+                <Grid item align='center' md={4} xs={4}>
+                    <Typography theme={theme} variant="h6"> +91 8495922999 - Priya</Typography>
+                    <Typography theme={theme} variant="h6"> +91 9986282827 - Sahana</Typography>
                 </Grid>
                 {/* socials */}
-                <Grid item>
-                    <IconButton sx={{ color: 'white' }} > <InstagramIcon /> <FacebookIcon /></IconButton>
+                <Grid item align='center' md={4} xs={4}>
+                    <IconButton onClick={() => window.open('https://www.instagram.com/the_green_canopy/')} sx={{ color: 'white' }} > <InstagramIcon sx={{ fontSize: '40px' }} /> {/*<FacebookIcon /> */}</IconButton>
                 </Grid>
             </Grid>
         </div >
