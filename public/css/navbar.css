@@ -1,7 +1,9 @@
 .menu-link {
     color: white;
 }
-
-.navbar {
-    /* margin-bottom: 10px; */
+.menu-link:hover{
+    color: white;
+}
+.menulink:hover {
+    text-decoration: none;
 }

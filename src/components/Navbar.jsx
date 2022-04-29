@@ -26,9 +26,9 @@ export default function Navbar() {
     }
 
     return (
-        <div className='navbar'>
+        <div>
             <AppBar style={{ background: 'transparent', boxShadow: 'none', position: 'relative', margin: 0 }}>
-                <IconButton component={Link} to="/">
+                <IconButton className="menulink" component={Link} to="/">
                     <img style={{ height: '70px' }} src='images/logo.png' alt='the green canopy' />
                     <Typography theme={theme} variant="h5">The Green Canopy</Typography>
                 </IconButton>
