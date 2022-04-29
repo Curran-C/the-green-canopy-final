@@ -46,7 +46,7 @@ export default function Homepage() {
             {/* <div id="border"> */}
             {/* <Typography className='border' theme={theme} variant='h5' align="center" component="h5">HIGH-END LANDSCAPE SOLUTIONS</Typography> */}
             {/* </div> */}
-            <h2 className="subheading"> <span className='underline'>HIG</span>H-END LANDSCAPE SOLUTIONS</h2>
+            <h2 className="subheading"> <span className='underline'>ONE</span>-STOP LANDSCAPING SOLUTIONS</h2>
             <Typography sx={{
                 width: '55%',
                 '@media screen and (max-width: 540px)': {
