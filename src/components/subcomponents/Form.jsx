@@ -2,10 +2,14 @@ import React, { useRef } from 'react';
 import { Typography, Grid, Button } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import emailjs from '@emailjs/browser';
+import { useNavigate } from 'react-router-dom'
+
 
 
 
 export default function Form() {
+    const navigate = useNavigate();
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -14,6 +18,8 @@ export default function Form() {
         emailjs.sendForm('service_vbbtpmo', 'template_lczaobc', form.current, 'mEWXjc3FjpuoPVZg2')
             .then((result) => {
                 console.log(result.text);
+                navigate('/')
+                navigate('/contact%20us')
             }, (error) => {
                 console.log(error.text);
             });

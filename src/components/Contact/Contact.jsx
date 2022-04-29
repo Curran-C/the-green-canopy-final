@@ -5,12 +5,13 @@ import Form from '../subcomponents/Form'
 import Info from '../subcomponents/Info'
 import Map from '../subcomponents/Map'
 import Footer from '../Footer'
+import { useNavigate } from 'react-router-dom'
 import './contact.css'
 
 
 export default function Contact() {
 
-
+    const navigate = useNavigate();
 
     return (
         <div>
