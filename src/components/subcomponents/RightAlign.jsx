@@ -37,7 +37,21 @@ export default function RightAlign(props) {
 
             <Grid order={{ xs: 2, md: 3 }} item md={4}>
                 <Card elevation={0} sx={{ borderRadius: 10, width: '350px' }}>
-                    <CardMedia sx={{ height: 'auto' }} component='img' image={props.image} />
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img style={{ display: 'block', height: '100%', width: '100%' }} class="d-block w-100" src={props.image} alt="First slide" />
+                            </div>
+                            <div class="carousel-item">
+                                <img style={{ display: 'block', height: '100%', width: '100%' }} class="d-block w-100" src={props.image} alt="Second slide" />
+                            </div>
+                            <div class="carousel-item">
+                                <img style={{ display: 'block', height: '100%', width: '100%' }} class="d-block w-100" src={props.image} alt="Third slide" />
+                            </div>
+                        </div>
+                    </div>
+                    {/* <img style={{ display: 'block', height: '100%', width: '100%' }} src={props.image} alt={props.title} /> */}
+                    {/* <CardMedia sx={{ height: 'auto' }} component='img' image={props.image} /> */}
                 </Card>
             </Grid>
         </Grid>

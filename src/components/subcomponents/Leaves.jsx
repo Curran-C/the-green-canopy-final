@@ -8,7 +8,7 @@ export default function Leaves(props) {
     return (
         count.map((count) => {
             return (
-                <div style={{ position: 'relative' }}>
+                <div key={count} style={{ position: 'relative' }}>
                     <img className={'leaf' + count} style={{ position: 'absolute' }} src={"images/leaves/leaf" + count + ".png"} alt="leaf" />
                 </div>
             )

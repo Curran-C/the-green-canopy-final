@@ -53,7 +53,8 @@ export default function Info() {
                     <Typography sx={{ '@media screen and (max-width: 840px)': { width: '100%' } }} theme={theme} variant='body1'>Monday to Saturday</Typography>
                 </Grid>
                 <Grid xs={12} md={6} item>
-                    <Typography sx={{ marginTop: '30px', marginBottom: '30px', '@media screen and (max-width: 840px)': { width: '100%' } }} theme={theme} variant='body1'>queries.tgc@gmail.com</Typography>
+                    <Typography sx={{ marginTop: '30px', '@media screen and (max-width: 840px)': { width: '100%' } }} theme={theme} variant='h6'>Email:</Typography>
+                    <Typography sx={{ '@media screen and (max-width: 840px)': { width: '100%' } }} theme={theme} variant='body1'>queries.tgc@gmail.com</Typography>
                 </Grid>
             </Grid>
         </div>
