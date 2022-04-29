@@ -40,13 +40,13 @@ export default function RightAlign(props) {
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img style={{ display: 'block', height: '100%', width: '100%' }} class="d-block w-100" src={props.image} alt="First slide" />
+                                <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image} alt="First slide" />
                             </div>
                             <div class="carousel-item">
-                                <img style={{ display: 'block', height: '100%', width: '100%' }} class="d-block w-100" src={props.image} alt="Second slide" />
+                                <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image} alt="Second slide" />
                             </div>
                             <div class="carousel-item">
-                                <img style={{ display: 'block', height: '100%', width: '100%' }} class="d-block w-100" src={props.image} alt="Third slide" />
+                                <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image} alt="Third slide" />
                             </div>
                         </div>
                     </div>

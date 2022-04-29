@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import LeftAlign from './subcomponents/LeftAlign'
 import RightAlign from './subcomponents/RightAlign'
 import data from './service-data'
 import Footer from './Footer'
 import Leaves from './subcomponents/Leaves'
+import { useNavigate } from 'react-router-dom'
 
 
 
 export default function Services() {
 
     let serviceData = { data }.data
+
+    const navigate = useNavigate()
+    const [stop, setStop] = useState(true)
+
+    // useEffect(() => {
+    //     // window.location.reload();
+    //     // setStop(false)
+    // }, [])
+
+    if (!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
 
     return (
         <>
@@ -24,6 +38,7 @@ export default function Services() {
                 })}
             </div >
             <Footer />
+
         </>
     )
 }
