@@ -40,13 +40,16 @@ export default function RightAlign(props) {
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image} alt="First slide" />
+                                <CardMedia sx={{ height: 'auto' }} component='img' image={props.image[0]} />
+                                {/* <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image[0]} alt="First slide" /> */}
                             </div>
                             <div class="carousel-item">
-                                <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image} alt="Second slide" />
+                                <CardMedia sx={{ height: 'auto' }} component='img' image={props.image[1]} />
+                                {/* <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image[1]} alt="Second slide" /> */}
                             </div>
                             <div class="carousel-item">
-                                <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image} alt="Third slide" />
+                                <CardMedia sx={{ height: 'auto' }} component='img' image={props.image[2]} />
+                                {/* <img style={{ display: 'block', height: '100%', width: '100%' }} className="d-block w-100" src={props.image[2]} alt="Third slide" /> */}
                             </div>
                         </div>
                     </div>
