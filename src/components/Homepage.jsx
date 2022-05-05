@@ -43,17 +43,18 @@ export default function Homepage() {
                 <img className='plant1' src="images/homepage-imgs/plant1.png" alt="plant"></img>
                 <img className='plant2' src="images/homepage-imgs/plant2.png" alt="plant"></img>
             </div>
-            {/* <div id="border"> */}
-            {/* <Typography className='border' theme={theme} variant='h5' align="center" component="h5">HIGH-END LANDSCAPE SOLUTIONS</Typography> */}
-            {/* </div> */}
-            <h2 className="subheading"> <span className='underline'>ONE</span>-STOP LANDSCAPING SOLUTIONS</h2>
-            <Typography sx={{
+            {/* <h2 className="subheading"> <span className='underline'>ONE</span>-STOP LANDSCAPING SOLUTIONS</h2> */}
+            <div className='margin'>
+                <h1 className="heading">Delivering <span className="green">Plants</span>,</h1>
+                <h1 className="heading">Delivering <span className="green">Happiness!</span></h1>
+            </div>
+            {/* <Typography sx={{
                 width: '55%',
                 '@media screen and (max-width: 540px)': {
                     width: '95%',
                     marginBottom: '80px'
                 }
-            }} theme={theme} variant='h2' align="center" component="h1">Transform Your Outdoor Space</Typography>
+            }} theme={theme} variant='h2' align="center" component="h1">Transform Your Outdoor Space</Typography> */}
             <img className='grass' src="images/homepage-imgs/grass.png" alt="grass"></img>
         </div>
     )

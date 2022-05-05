@@ -9,7 +9,21 @@
   min-height: 150px;
   object-fit: cover;
 }
-
+.heading {
+  font-family: 'Kaushan Script','cursive';
+  color: #805a29;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-size: 60px;
+}
+.green {
+  color: #406C19;
+}
+.margin {
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
 .plant1 {
   position: absolute;
   height: 300px;
@@ -43,22 +57,39 @@
 
 /******************************MEDIA QUERIES ********************************************/
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 376px) {
+  .heading {
+    font-size: 57px;
+  }
+  .margin {
+    margin-top: 200px;
+  }
   .plant1 {
-    height: 150px;
+    height: 200px;
   }
   .plant2 {
-    height: 140px;
+    height: 190px;
   }
   .subheading {
     margin-top: 170px;
     font-size: 15px;
   }
   .relative {
-      bottom: 170px;
+      bottom: 200px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 540px) {
+@media screen and (min-width: 376px) and (max-width: 541px) {
+    .heading {
+      font-size: 57px;
+    }
+    
+    .margin {
+      margin-top: 230px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .plant1 {
         height: 230px;
     }
@@ -76,7 +107,21 @@
         bottom: 250px;
     }
 }
-@media screen and (min-width: 540px) and (max-width: 768px) {
+@media screen and (min-width: 541px) and (max-width: 769px) {
+      .heading {
+        font-size: 57px;
+      }
+      .grass {
+        position: absolute;
+        bottom: 0;
+      }
+      
+      .margin {
+        margin-top: 400px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     .plant1 {
         height: 350px;
     }
@@ -84,7 +129,6 @@
     .plant2 {
         height: 340px;
     }
-
 
     .subheading {
         margin-top: 400px;
@@ -95,7 +139,22 @@
         bottom: 400px;
     }
 }
-@media screen and (min-width: 786px) and (max-width: 820px) {
+@media screen and (min-width: 789px) and (max-width: 821px) {
+  .heading {
+    font-size: 57px;
+  }
+  
+  .grass {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .margin {
+    margin-top: 560px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
     .plant1 {
         height: 450px;
     }
@@ -112,14 +171,14 @@
         bottom: 560px;
     }
 }
-/* @media screen and (min-width: 1180px) and (max-width: 1024px) {
+@media screen and (min-width: 1300px) and (max-width: 2560px) {
     .grass {
         position: absolute;
         bottom: 0;
     }
 }
 
-@media screen and (width: 1280px) {
+/* @media screen and (width: 1280px) {
   .grass {
     position: absolute;
     bottom: 0;
