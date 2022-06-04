@@ -52,7 +52,7 @@ export default function Form() {
                 <Grid container spacing={2}>
                     <Grid item md={5.3} xs={12}>
                         <Typography theme={theme} variant="body1">First Name</Typography>
-                        <input name="firstName" style={{ paddingLeft: 'auto' }} placeholder='First Name' size="30" type="text" required />
+                        <input name="firstName" style={{ paddingLeft: 'auto' }} placeholder='First Name' size="28" type="text" required />
                     </Grid>
                     <Grid item md={6} xs={12}>
                         <Typography theme={theme} variant="body1">Last Name</Typography>
@@ -71,7 +71,7 @@ export default function Form() {
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={5.3}>
                         <Typography theme={theme} variant="body1">Email Address</Typography>
-                        <input name="email" placeholder='Email' size="30" type="email" required />
+                        <input name="email" placeholder='Email' size="28" type="email" required />
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Typography theme={theme} variant="body1">Phone Number</Typography>
