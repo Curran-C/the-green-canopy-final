@@ -4,6 +4,7 @@
     top: -10;
     left: 0;
 }
+
 .leafseven {
     position: absolute;
     z-index: -1;
@@ -11,9 +12,16 @@
     right: 0;
 }
 
+.h6Container {
+    height: 40vh;
+}
+
+.h5Container {
+    margin-top: 50px;
+}
 
 @media screen and (max-width: 840px) {
     .leafseven {
-        top: 500px 
+        top: 500px
     }
 }
